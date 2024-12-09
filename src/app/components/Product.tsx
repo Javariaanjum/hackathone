@@ -93,9 +93,7 @@ export default function Product() {
             <div className="relative">
               <Image
                 src={product.image}
-                alt={product.name}
-                w-400px
-                h-400px
+              alt="image"
               className= "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                
               />

@@ -40,9 +40,8 @@ export default function Hero1() {
           <Image
             src={Image3}
             alt="Image 3"
-            width-full
-            height-200px
-            className="rounded-lg object-cover"
+          
+            className="rounded-lg object-cover w-full h-[200px]"
           />
           <h3 className="text-lg font-semibold text-[#333333] text-center">Bedroom</h3>
         </div>
