@@ -76,11 +76,11 @@ const products = [
   },
 ];
 
-export default function ProductGrid() {
+export default function Product() {
   return (
     <div className="py-12 bg-gray-100">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-800">Our Products</h2>
+        <h2 className="text-2xl font-bold  text-[#111111] ">Our Products</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4">
@@ -94,9 +94,10 @@ export default function ProductGrid() {
               <Image
                 src={product.image}
                 alt={product.name}
-                width={400}
-                height={400}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                w-400px
+                h-400px
+              className= "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+               
               />
               {/* Discount/Tag */}
               {product.discount && (
@@ -145,10 +146,10 @@ export default function ProductGrid() {
       </div>
 
       {/* Show More Button */}
-      <div className="text-center mt-8">
-        <button className="bg-yellow-500 text-white font-bold py-2 px-6 rounded hover:bg-yellow-600 transition-colors">
+      <div className="text-center mt-8  ">
+          <button className=" text-[#B88E2F] font-bold py-2 px-6 border-4 border-solid border-[#B88E2F]  bg-white w-[20%] ">
           Show More
-        </button>
+        </button>  
       </div>
     </div>
   );
